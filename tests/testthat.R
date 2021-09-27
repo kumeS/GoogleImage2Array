@@ -4,3 +4,4 @@ library("GoogleImage2Array")
 options(testthat.use_colours = FALSE)
 
 testthat::test_file("testthat/test_GoogleImage2array.R")
+

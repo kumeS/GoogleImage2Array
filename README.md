@@ -19,7 +19,15 @@ devtools::install_github("kumeS/GoogleImage2Array")
 Usage 
 ======
 ```r
+#Search by persian cat
+query <- "persian cat"
+CatImg <- GoogleImage2array(query)
 
+#show info
+str(CatImg)
+
+#show CatImg
+display.array(CatImg)
 ```
 
 # License
