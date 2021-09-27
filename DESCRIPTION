@@ -1,0 +1,21 @@
+Package: ccTensor
+Type: Package
+Title: CUR/CX Tensor Decomposition
+Version: 1.0.2
+Date: 2021-08-02
+Authors@R: c(person("Koki", "Tsuyuzaki", role = c("aut", "cre"),
+                      email = "k.t.the-answer@hotmail.co.jp"),
+               person("Itoshi", "Nikaido", role = "aut"))
+Depends: R (>= 4.1.0)
+Imports: methods, fields, MASS, igraph, rTensor
+Suggests: testthat, nnTensor
+Description: CUR/CX decomposition factorizes a matrix into two factor matrices and Multidimensional CX Decomposition factorizes a tensor into a core tensor and some factor matrices. See the reference section of GitHub README.md <https://github.com/rikenbit/ccTensor>, for details of the methods.
+License: Artistic-2.0
+URL: https://github.com/rikenbit/ccTensor
+NeedsCompilation: no
+Packaged: 2021-08-11 23:40:36 UTC; root
+Author: Koki Tsuyuzaki [aut, cre],
+  Itoshi Nikaido [aut]
+Maintainer: Koki Tsuyuzaki <k.t.the-answer@hotmail.co.jp>
+Repository: CRAN
+Date/Publication: 2021-08-12 04:30:07 UTC
