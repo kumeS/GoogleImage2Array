@@ -19,6 +19,8 @@ devtools::install_github("kumeS/GoogleImage2Array")
 Usage 
 ======
 ```r
+library(GoogleImage2Array)
+
 #Search by persian cat
 query <- "persian cat"
 CatImg <- GoogleImage2array(query)
@@ -29,6 +31,10 @@ str(CatImg)
 #show CatImg
 display.array(CatImg)
 ```
+
+Then, you should have the results of the tiled images.
+
+![Image_persian cat](inst/image/Image_persian cat.png)
 
 # License
 Copyright (c) 2021 Satoshi Kume 
