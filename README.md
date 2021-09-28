@@ -1,5 +1,5 @@
 # GoogleImage2Array
-R package for Creating array data from 2D image thumbnails via Google Image Search
+R package for Creating Array Data from 2D Image Thumbnails via Google Image Search
 
 Installation
 ======
