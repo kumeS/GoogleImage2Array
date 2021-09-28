@@ -37,7 +37,7 @@ library(magrittr)
 
 `GoogleImage2array` function provide an array of images via google image search.
 
-```{r echo=TRUE, eval=TRUE}
+```{r echo=TRUE, eval=FALSE}
 #Search by persian cat
 query <- "persian cat"
 CatImg <- GoogleImage2array(query)
@@ -64,7 +64,7 @@ str(ImgDat)
 
 `display.array` show a result as a tiled image.
 
-```{r echo=TRUE, eval=TRUE}
+```{r echo=TRUE, eval=FALSE}
 #show CatImg
 display.array(CatImg)
 
