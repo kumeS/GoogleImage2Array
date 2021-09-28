@@ -34,7 +34,7 @@ display.array(CatImg)
 
 Then, you should have the results of the tiled images.
 
-![Image_persian](inst/image/Image_persian cat.png)
+![Image_persian_cat](inst/image/Image_persian_cat.png)
 
 # License
 Copyright (c) 2021 Satoshi Kume 
