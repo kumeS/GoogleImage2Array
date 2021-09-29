@@ -27,6 +27,8 @@ CatImg <- GoogleImage2array(query)
 
 #show info
 str(CatImg)
+#$ array: num [1:20, 1:64, 1:64, 1:3] 0.0141 0.7029 0.7608 0.111 0.3398 ...
+#$ query: chr "persian cat"
 
 #show CatImg
 display.array(CatImg)
