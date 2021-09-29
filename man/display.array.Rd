@@ -4,13 +4,15 @@
 \alias{display.array}
 \title{display.array: display 4d array as a tiled image.}
 \usage{
-display.array(x, Save = TRUE)
+display.array(x, Save = FALSE, file_path = NULL)
 }
 \arguments{
 \item{x}{a list obtained by the GoogleImage2array function.}
 
 \item{Save}{a logical. Whether to save images locally or not.
 if TRUE, save locally.}
+
+\item{file_path}{a character. a directory to save the image file.}
 }
 \value{
 image
@@ -20,7 +22,7 @@ This function is to create the R array/tensor from
 2D image obtained from Google image search.
 }
 \examples{
-\dontrun{
+\donttest{
 library(EBImage)
 
 # Simple examples

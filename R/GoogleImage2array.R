@@ -11,6 +11,7 @@
 ##' @param Col a logical. Whether to handle color or gray images.
 ##' if TRUE, use color mode.
 ##' @param gl a character to show a region information. ex. us, ja etc
+##' @param file_path a character. a directory to save the image file.
 ##'
 ##' @return array
 ##' @author Satoshi Kume
@@ -25,7 +26,7 @@
 ##'
 ##' @export GoogleImage2array
 ##'
-##' @examples \dontrun{
+##' @examples \donttest{
 ##' library(EBImage)
 ##'
 ##' # Simple examples
@@ -42,7 +43,7 @@
 ##' str(DogImg)
 ##'
 ##' #Bind arrays
-##' ImgDat <- EBImage::abind(CatImg, DogImg, along=1)
+##' ImgDat <- EBImage::abind(CatImg$array, DogImg$array, along=1)
 ##'
 ##' #show info
 ##' str(ImgDat)
@@ -54,6 +55,7 @@ GoogleImage2array <- function(Query,
                               wh=64,
                               Col=TRUE,
                               Save=FALSE,
+                              file_path=NULL,
                               gl="us"){
 
 #Decide hl
@@ -82,8 +84,16 @@ imgsrc00 <- imgsrc[n]
 
 #Save it locally
 if(Save){
+
+if(is.null(file_path)){
+  path <- paste0(tempdir(), "/")
+}else{
+  path <- paste0(sub("/$", "", file_path), "/")
+}
+
 utils::download.file(imgsrc00,
-              paste0("Image_", formatC(n, width = 3, flag = "0"),".jpg"), mode = "wb")
+              paste0(path, "Image_", formatC(n, width = 3, flag = "0"),".jpg"), mode = "wb")
+
 }
 
 #Read image with color or gray

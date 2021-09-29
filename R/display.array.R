@@ -6,6 +6,7 @@
 ##' @param x a list obtained by the GoogleImage2array function.
 ##' @param Save a logical. Whether to save images locally or not.
 ##' if TRUE, save locally.
+##' @param file_path a character. a directory to save the image file.
 ##'
 ##' @return image
 ##' @author Satoshi Kume
@@ -16,11 +17,13 @@
 ##' @importFrom EBImage readImage
 ##' @importFrom EBImage resize
 ##' @importFrom EBImage Image
+##' @importFrom graphics par
 ##' @import grDevices
+##'
 ##'
 ##' @export display.array
 ##'
-##' @examples \dontrun{
+##' @examples \donttest{
 ##' library(EBImage)
 ##'
 ##' # Simple examples
@@ -40,7 +43,8 @@
 ##'
 
 display.array <- function(x,
-                          Save=TRUE){
+                          Save=FALSE,
+                          file_path=NULL){
 
 if(!all(names(x) == c("array", "query"))){
  return(message("Warring: not proper value of x"))
@@ -50,6 +54,9 @@ if(!all(names(x) == c("array", "query"))){
 a <- x$array
 b <- x$query
 
+oldpar <- graphics::par(no.readonly = TRUE)    # code line i
+on.exit(graphics::par(oldpar))            # code line i + 1
+
 if(!Save){
 graphics::par(mfrow=c(4,5), mar=rep(0, 4))
 for(n in 1:dim(a)[1]){
@@ -58,8 +65,15 @@ for(n in 1:dim(a)[1]){
 }
 }else{
 
-grDevices::png(filename=paste0("Image_", b, ".png"),
-     width = 500, height = 500)
+if(is.null(file_path)){
+  path <- paste0(tempdir(), "/")
+}else{
+  path <- paste0(sub("/$", "", file_path), "/")
+}
+
+grDevices::png(
+  filename=paste0(path, "Image_", gsub(" ", "_", b), ".png"),
+  width = 500, height = 500)
 graphics::par(mfrow=c(4,5), mar=rep(0, 4))
 for(n in 1:dim(a)[1]){
   #n <- 1

@@ -4,7 +4,14 @@
 \alias{GoogleImage2array}
 \title{GoogleImage2array: create array from image thumbnails.}
 \usage{
-GoogleImage2array(Query, wh = 64, Col = TRUE, Save = FALSE, gl = "us")
+GoogleImage2array(
+  Query,
+  wh = 64,
+  Col = TRUE,
+  Save = FALSE,
+  file_path = NULL,
+  gl = "us"
+)
 }
 \arguments{
 \item{Query}{a character vector to search images}
@@ -17,6 +24,8 @@ if TRUE, use color mode.}
 \item{Save}{a logical. Whether to save images locally or not.
 if TRUE, save locally.}
 
+\item{file_path}{a character. a directory to save the image file.}
+
 \item{gl}{a character to show a region information. ex. us, ja etc}
 }
 \value{
@@ -28,7 +37,7 @@ This function is to create the R array/tensor from
 This function provides an array consisted of 20 images per run.
 }
 \examples{
-\dontrun{
+\donttest{
 library(EBImage)
 
 # Simple examples
@@ -45,7 +54,7 @@ DogImg <- GoogleImage2array(query)
 str(DogImg)
 
 #Bind arrays
-ImgDat <- EBImage::abind(CatImg, DogImg, along=1)
+ImgDat <- EBImage::abind(CatImg$array, DogImg$array, along=1)
 
 #show info
 str(ImgDat)
