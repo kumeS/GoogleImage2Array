@@ -32,6 +32,9 @@ str(CatImg)
 
 #show CatImg
 display.array(CatImg)
+
+#A example to bind arrays (ex. x and y) at the first dimension.
+#unname(EBImage::abind(x, y, along=1))
 ```
 
 Then, you should have the results of the tiled images.
