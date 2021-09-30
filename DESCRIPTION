@@ -1,7 +1,7 @@
 Package: GoogleImage2Array
 Type: Package
 Title: Create Array Data from 2D Image Thumbnails via Google Image Search
-Version: 0.99.2
+Version: 0.99.3
 Date: 2021-09-28
 Authors@R: c(person("Satoshi", "Kume", 
              role = c("aut", "cre"),
