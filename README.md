@@ -5,6 +5,7 @@
 
 R package for Creating Array Data from 2D Image Thumbnails via Google Image Search
 
+
 Installation
 ======
 ```r
