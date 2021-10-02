@@ -1,4 +1,8 @@
 # GoogleImage2Array
+
+[![CRAN](https://www.r-pkg.org/badges/version/GoogleImage2Array)](https://cran.r-project.org/web/packages/GoogleImage2Array/index.html)
+[![CRAN](https://cranlogs.r-pkg.org/badges/grand-total/GoogleImage2Array)](https://cran.r-project.org/web/packages/GoogleImage2Array/index.html)
+
 R package for Creating Array Data from 2D Image Thumbnails via Google Image Search
 
 Installation
