@@ -9,17 +9,28 @@ R package for Creating Array Data from 2D Image Thumbnails via Google Image Sear
 
 Installation
 ======
+
+install from CRAN
+
 ```r
-git clone https://github.com/kumeS/GoogleImage2Array
-R CMD INSTALL GoogleImage2Array
+install.packages("GoogleImage2Array", repos="http://cran.r-project.org")
 ```
 
-or type the code below in the R console window
+install the latest
+
+type the code below in the R console window
 
 ```r
 install.packages("devtools", repos="http://cran.r-project.org")
 library(devtools)
 devtools::install_github("kumeS/GoogleImage2Array")
+```
+
+or install from the source file
+
+```r
+git clone https://github.com/kumeS/GoogleImage2Array
+R CMD INSTALL GoogleImage2Array
 ```
 
 Usage 
