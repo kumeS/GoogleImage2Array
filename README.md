@@ -5,11 +5,7 @@
 
 R package for Creating Array Data from 2D Image Thumbnails via Google Image Search
 
-[CRAN / GoogleImage2Array](https://cran.curtin.edu.au/web/packages/GoogleImage2Array/index.html)
-
-[GitHub / GoogleImage2Array](https://github.com/kumeS/GoogleImage2Array)
-
-[rdrr.io / GoogleImage2Array](https://rdrr.io/cran/GoogleImage2Array/)
+[CRAN/GoogleImage2Array](https://cran.curtin.edu.au/web/packages/GoogleImage2Array/index.html), [GitHub/GoogleImage2Array](https://github.com/kumeS/GoogleImage2Array), [rdrr.io/GoogleImage2Array](https://rdrr.io/cran/GoogleImage2Array/)
 
 Installation
 ======
