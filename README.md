@@ -1,4 +1,4 @@
-# [GoogleImage2Array (0.99.3)](https://kumes.github.io/GoogleImage2Array/)
+# [GoogleImage2Array (0.99.4)](https://kumes.github.io/GoogleImage2Array/)
 
 [![CRAN](https://www.r-pkg.org/badges/version/GoogleImage2Array)](https://cran.r-project.org/web/packages/GoogleImage2Array/index.html)
 [![CRAN](https://cranlogs.r-pkg.org/badges/grand-total/GoogleImage2Array)](https://cran.r-project.org/web/packages/GoogleImage2Array/index.html)
@@ -6,6 +6,10 @@
 R package for Creating Array Data from 2D Image Thumbnails via Google Image Search
 
 [CRAN / GoogleImage2Array](https://cran.curtin.edu.au/web/packages/GoogleImage2Array/index.html)
+
+[GitHub / GoogleImage2Array](https://github.com/kumeS/GoogleImage2Array)
+
+[rdrr.io / GoogleImage2Array](https://rdrr.io/cran/GoogleImage2Array/)
 
 Installation
 ======
