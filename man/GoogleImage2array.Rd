@@ -54,7 +54,7 @@ DogImg <- GoogleImage2array(query)
 str(DogImg)
 
 #Bind arrays
-ImgDat <- EBImage::abind(CatImg$array, DogImg$array, along=1)
+ImgDat <- unname(EBImage::abind(CatImg$array, DogImg$array, along=1))
 
 #show info
 str(ImgDat)

@@ -29,8 +29,6 @@ BiocStyle::markdown()
 
 ```{r echo=TRUE, eval=FALSE}
 library(GoogleImage2Array)
-library(EBImage)
-library(magrittr)
 ```
 
 # Get images via Google Image Search
@@ -44,6 +42,9 @@ CatImg <- GoogleImage2array(query)
 
 #show info
 str(CatImg)
+#List of 2
+# $ array: num [1:20, 1:64, 1:64, 1:3] 0.0141 0.7608 0.111 0.7067 0.3398 ...
+# $ query: chr "persian cat"
 
 #Search by Shiba inu
 query <- "Shiba inu"
@@ -51,9 +52,12 @@ DogImg <- GoogleImage2array(query)
 
 #show info
 str(DogImg)
+#List of 2
+# $ array: num [1:20, 1:64, 1:64, 1:3] 0.1667 0.0689 0.9373 0.3808 0.3851 ...
+# $ query: chr "Shiba inu"
 
 #Bind arrays
-ImgDat <- unname(EBImage::abind(CatImg$array, DogImg$array, along=1))
+ImgDat <- bind.array(CatImg, DogImg)
 
 #show info
 str(ImgDat)
@@ -71,6 +75,13 @@ display.array(CatImg)
 #show DogImg
 display.array(DogImg)
 
+```
+
+# Download & display images
+
+```{r echo=TRUE, eval=FALSE}
+#search Shiba inu & display the images
+display.array(GoogleImage2array("Shiba inu"))
 ```
 
 # Session information {.unnumbered}
