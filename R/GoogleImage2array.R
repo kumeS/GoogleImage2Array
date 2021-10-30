@@ -69,6 +69,7 @@ url <- utils::URLencode(paste0("https://www.google.com/search?q=", Query,
                                "&hl=", lan, "&gl=", gl,
                                "&btnG=Google+Search&tbs=0&safe=off&tbm=isch"))
 
+#library(magrittr)
 #get URLs
 imgsrc <- xml2::read_html(url) %>%
         rvest::html_nodes(xpath = '//img') %>%
@@ -98,9 +99,15 @@ utils::download.file(imgsrc00,
 
 #Read image with color or gray
 if(Col){
-  Img <- EBImage::readImage(imgsrc00, type="jpg")
+  Er <- try(Img <- EBImage::readImage(imgsrc00, type="jpg"), silent=T)
+  if(class(Er) == "try-error"){
+  try(Img <- EBImage::readImage(imgsrc00, type="png"), silent=T)
+  }
 }else{
-  Img <- EBImage::readImage(imgsrc00, type="jpg")
+  Er <- try(Img <- EBImage::readImage(imgsrc00, type="jpg"), silent=T)
+  if(class(Er) == "try-error"){
+  try(Img <- EBImage::readImage(imgsrc00, type="png"), silent=T)
+  }
   Img <- EBImage::Image(Img, colormode = "gray", dim = c(dim(Img)[-3], 1))
 }
 
