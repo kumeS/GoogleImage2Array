@@ -1,4 +1,4 @@
-# [GoogleImage2Array (0.99.4)](https://kumes.github.io/GoogleImage2Array/)
+# [GoogleImage2Array (0.99.5)](https://kumes.github.io/GoogleImage2Array/)
 
 [![CRAN](https://www.r-pkg.org/badges/version/GoogleImage2Array)](https://cran.r-project.org/web/packages/GoogleImage2Array/index.html)
 [![CRAN](https://cranlogs.r-pkg.org/badges/grand-total/GoogleImage2Array)](https://cran.r-project.org/web/packages/GoogleImage2Array/index.html)
