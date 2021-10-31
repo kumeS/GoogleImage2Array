@@ -14,7 +14,7 @@ Version
 Installation
 ======
 
-- install from CRAN
+- install from CRAN (ver.	0.99.2)
 
 ```r
 install.packages("GoogleImage2Array", repos="http://cran.r-project.org")
