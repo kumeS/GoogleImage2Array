@@ -7,14 +7,13 @@ R package for Creating Array Data from 2D Image Thumbnails via Google Image Sear
 
 [CRAN/GoogleImage2Array](https://cran.curtin.edu.au/web/packages/GoogleImage2Array/index.html), [GitHub/GoogleImage2Array](https://github.com/kumeS/GoogleImage2Array), [rdrr.io/GoogleImage2Array](https://rdrr.io/cran/GoogleImage2Array/)
 
-Version
-======
+# Version
+
 0.99.6: Added a new function, 'display.spiral'.
 0.99.6: Modified the 'GoogleImage2array' function.
 0.99.5: Fixed to be able to read jpeg and png formats.
 
-Installation
-======
+# Installation
 
 - install from CRAN (ver.	0.99.2)
 
@@ -39,12 +38,20 @@ git clone https://github.com/kumeS/GoogleImage2Array
 R CMD INSTALL GoogleImage2Array
 ```
 
-Tutorial
-======
+# Tutorial
+
 - [How to use the GoogleImage2Array functions](https://kumes.github.io/GoogleImage2Array/vignettes/HowToUse.html)
 
-Simple usage
-======
+# Functions
+
+- GoogleImage2array: create array from image thumbnails via the google image search.
+- bind.array: bind two 4d arrays to one 4d array.
+- display.array: display 4d array as a tiled image.
+- display.spiral: display 4d array as a spiral image.
+
+
+# Simple usage
+
 ```r
 library(GoogleImage2Array)
 
@@ -63,14 +70,7 @@ display.array(CatImg)
 
 You should have the results of the tiled images as follows.
 
-![Image_persian_cat](inst/image/Image_persian_cat.png)
-
-# Functions
-
-- GoogleImage2array: create array from image thumbnails via the google image search.
-- bind.array: bind two 4d arrays to one 4d array.
-- display.array: display 4d array as a tiled image.
-- display.spiral: display 4d array as a spiral image.
+![Image_persian_cat](inst/images/Image_persian_cat.png)
 
 # License
 Copyright (c) 2021 Satoshi Kume 

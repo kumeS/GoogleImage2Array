@@ -21,6 +21,7 @@
 ##' @importFrom spiralize spiral_initialize
 ##' @importFrom spiralize spiral_track
 ##' @importFrom spiralize spiral_raster
+##' @importFrom grid gpar
 ##'
 ##' @export display.spiral
 ##'
@@ -55,7 +56,7 @@ on.exit(graphics::par(oldpar))            # code line i + 1
 
 Spi <- function(a=a, b=b){
 spiralize::spiral_initialize(start = 0, end = 360*3 + 180,
-                             polar_lines_gp = gpar(col = "white",lty = 3))
+                             polar_lines_gp = grid::gpar(col = "white",lty = 3))
 spiralize::spiral_track(height = 0.95)
 for(m in seq_len(dim(a)[1])){
   #m <- 1
