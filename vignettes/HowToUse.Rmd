@@ -1,5 +1,5 @@
 ---
-title: "How to use the GoogleImage2array function"
+title: "How to use the GoogleImage2Array functions"
 author: 
 - name: Satoshi Kume
   email: satoshi.kume.1984@gmail.com
@@ -25,7 +25,7 @@ BiocStyle::markdown()
 **Last modified:** `r file.info("HowToUse.Rmd")$mtime`<br />
 **Compiled**: `r date()`
 
-# Install & load packages
+# Load packages
 
 ```{r echo=TRUE, eval=FALSE}
 library(GoogleImage2Array)

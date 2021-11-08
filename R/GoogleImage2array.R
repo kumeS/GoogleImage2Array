@@ -12,6 +12,7 @@
 ##' if TRUE, use color mode.
 ##' @param gl a character to show a region information. ex. us, ja etc
 ##' @param file_path a character. a directory to save the image file.
+##' @param Display a logical; display images or not.
 ##'
 ##' @return array
 ##' @author Satoshi Kume
@@ -56,6 +57,7 @@ GoogleImage2array <- function(Query,
                               Col=TRUE,
                               Save=FALSE,
                               file_path=NULL,
+                              Display=FALSE,
                               gl="us"){
 
 #Decide hl
@@ -127,6 +129,11 @@ ImgTensor <- base::aperm(base::simplify2array(Dat), c(4, 1, 2, 3))
 
 ImgTensorList <- list(array=ImgTensor,
                       query=Query)
+
+if(Display){
+display.array(ImgTensorList, Save=FALSE)
+}
+
 #Output
 return(ImgTensorList)
 

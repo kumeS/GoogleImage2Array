@@ -10,6 +10,7 @@ GoogleImage2array(
   Col = TRUE,
   Save = FALSE,
   file_path = NULL,
+  Display = FALSE,
   gl = "us"
 )
 }
@@ -25,6 +26,8 @@ if TRUE, use color mode.}
 if TRUE, save locally.}
 
 \item{file_path}{a character. a directory to save the image file.}
+
+\item{Display}{a logical; display images or not.}
 
 \item{gl}{a character to show a region information. ex. us, ja etc}
 }

@@ -1,7 +1,7 @@
-# [GoogleImage2Array (0.99.5)](https://kumes.github.io/GoogleImage2Array/)
+# [GoogleImage2Array (0.99.6)](https://kumes.github.io/GoogleImage2Array/)
 
 [![CRAN](https://www.r-pkg.org/badges/version/GoogleImage2Array)](https://cran.r-project.org/web/packages/GoogleImage2Array/index.html)
-[![CRAN](https://cranlogs.r-pkg.org/badges/grand-total/GoogleImage2Array)](https://cran.r-project.org/web/packages/GoogleImage2Array/index.html)
+[![CRAN](https://cranlogs.r-pkg.org/badges/grand-total/GoogleImage2Array)](http://www.datasciencemeta.com/rpackages)
 
 R package for Creating Array Data from 2D Image Thumbnails via Google Image Search
 
@@ -9,6 +9,8 @@ R package for Creating Array Data from 2D Image Thumbnails via Google Image Sear
 
 Version
 ======
+0.99.6: Added a new function, 'display.spiral'.
+0.99.6: Modified the 'GoogleImage2array' function.
 0.99.5: Fixed to be able to read jpeg and png formats.
 
 Installation
@@ -20,7 +22,7 @@ Installation
 install.packages("GoogleImage2Array", repos="http://cran.r-project.org")
 ```
 
-- install the latest
+- install the latest from GitHub
 
 type the code below in the R console window
 
@@ -37,7 +39,11 @@ git clone https://github.com/kumeS/GoogleImage2Array
 R CMD INSTALL GoogleImage2Array
 ```
 
-Usage 
+Tutorial
+======
+- How to use the GoogleImage2Array functions
+
+Simple usage
 ======
 ```r
 library(GoogleImage2Array)
@@ -53,14 +59,18 @@ str(CatImg)
 
 #show CatImg
 display.array(CatImg)
-
-#A example to bind arrays (ex. x and y) at the first dimension.
-#unname(EBImage::abind(x, y, along=1))
 ```
 
-Then, you should have the results of the tiled images.
+You should have the results of the tiled images as follows.
 
 ![Image_persian_cat](inst/image/Image_persian_cat.png)
+
+# Functions
+
+- GoogleImage2array: create array from image thumbnails via the google image search.
+- bind.array: bind two 4d arrays to one 4d array.
+- display.array: display 4d array as a tiled image.
+- display.spiral: display 4d array as a spiral image.
 
 # License
 Copyright (c) 2021 Satoshi Kume 

@@ -13,6 +13,8 @@ knitr-spin.md
 png$
 ^\.Rproj\.user$
 ^.*\.Rproj$
+.RData
+.Rhistory
 FAQ.md
 Makefile
 ^\.github$

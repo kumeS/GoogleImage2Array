@@ -1,7 +1,7 @@
 ##' @title display.array: display 4d array as a tiled image.
 ##'
-##' @description This function is to create the R array/tensor from
-##' 2D image obtained from Google image search.
+##' @description This function is to create a 2D tiled image
+##'  from the R array/tensor obtained from Google image search.
 ##'
 ##' @param x a list obtained by the GoogleImage2array function.
 ##' @param Save a logical. Whether to save images locally or not.
@@ -11,12 +11,6 @@
 ##' @return image
 ##' @author Satoshi Kume
 ##'
-##' @importFrom xml2 read_html
-##' @importFrom rvest html_nodes
-##' @importFrom rvest html_attr
-##' @importFrom EBImage readImage
-##' @importFrom EBImage resize
-##' @importFrom EBImage Image
 ##' @importFrom graphics par
 ##' @import grDevices
 ##'
@@ -24,7 +18,6 @@
 ##' @export display.array
 ##'
 ##' @examples \donttest{
-##' library(EBImage)
 ##'
 ##' # Simple examples
 ##' query <- "persian cat"
