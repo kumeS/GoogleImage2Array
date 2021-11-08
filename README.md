@@ -41,7 +41,7 @@ R CMD INSTALL GoogleImage2Array
 
 Tutorial
 ======
-- How to use the GoogleImage2Array functions
+- [How to use the GoogleImage2Array functions](https://kumes.github.io/GoogleImage2Array/vignettes/HowToUse.html)
 
 Simple usage
 ======
