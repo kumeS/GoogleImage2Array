@@ -87,7 +87,7 @@ ImgDat <- bind.array(CatImg, DogImg)
 str(ImgDat)
 ```
 
-# display images as a spiral image
+# Display images as a spiral image
 
 ```{r echo=TRUE, eval=FALSE}
 #show images
