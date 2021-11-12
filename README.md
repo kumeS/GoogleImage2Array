@@ -7,7 +7,7 @@ R package for Creating Array Data from 2D Image Thumbnails via Google Image Sear
 
 [CRAN/GoogleImage2Array](https://cran.curtin.edu.au/web/packages/GoogleImage2Array/index.html), [GitHub/GoogleImage2Array](https://github.com/kumeS/GoogleImage2Array), [rdrr.io/GoogleImage2Array](https://rdrr.io/cran/GoogleImage2Array/)
 
-[<img src="inst/images/hexSticker_GoogleImage2Array.png" height="150"/>](https://github.com/kumeS/seasonalityPlot/blob/main/inst/images/hexSticker_GoogleImage2Array.png)
+[<img src="inst/images/hexSticker_GoogleImage2Array.png" height="150"/>](https://github.com/kumeS/GoogleImage2Array/blob/main/inst/images/hexSticker_GoogleImage2Array.png)
 
 # Version
 
