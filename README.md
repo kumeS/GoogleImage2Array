@@ -11,9 +11,10 @@ R package for Creating Array Data from 2D Image Thumbnails via Google Image Sear
 
 # Version
 
-0.99.6: Added a new function, 'display.spiral'.
-0.99.6: Modified the 'GoogleImage2array' function.
-0.99.5: Fixed to be able to read jpeg and png formats.
+- 0.99.6: Added a new function, 'display.spiral'.
+- 0.99.6: Modified the 'GoogleImage2array' function.
+- 0.99.5: Fixed to be able to read jpeg and png formats.
+- 0.99.2: Published in CRAN.
 
 # Installation
 
