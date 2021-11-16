@@ -17,6 +17,6 @@ Suggests: testthat
 Description: Images are provided as an array dataset of 2D image thumbnails from Google Image Search <https://www.google.com/search>.
   This array data may be suitable for a training data of machine learning or deep learning as a first trial.
 License: Artistic-2.0
-URL: https://github.com/kumeS/GoogleImage2Array
+URL: https://kumes.github.io/GoogleImage2Array/
 RoxygenNote: 7.1.2
 Encoding: UTF-8
