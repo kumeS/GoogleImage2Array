@@ -29,8 +29,9 @@ install.packages("GoogleImage2Array", repos="http://cran.r-project.org")
 type the code below in the R console window
 
 ```r
-install.packages("devtools", repos="http://cran.r-project.org")
-library(devtools)
+install.packages(c("devtools", "BiocManager"), repos="http://cran.r-project.org")
+BiocManager::install("EBImage")
+
 devtools::install_github("kumeS/GoogleImage2Array")
 ```
 
