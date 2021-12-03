@@ -1,7 +1,7 @@
 Package: GoogleImage2Array
 Type: Package
 Title: Create Array Data from 2D Image Thumbnails via Google Image Search
-Version: 0.99.6
+Version: 0.99.7
 Date: 2021-11-07
 Authors@R: c(person("Satoshi", "Kume", 
              role = c("aut", "cre"),
@@ -12,7 +12,8 @@ Imports: xml2,
   EBImage, 
   magrittr, 
   spiralize,
-  magick
+  magick,
+  rTensor
 Suggests: testthat
 Description: Images are provided as an array dataset of 2D image thumbnails from Google Image Search <https://www.google.com/search>.
   This array data may be suitable for a training data of machine learning or deep learning as a first trial.

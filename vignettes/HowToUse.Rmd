@@ -69,12 +69,25 @@ display.array(CatImg)
 The images are displayed in tiles by the option of GoogleImage2array function.
 
 ```{r echo=TRUE, eval=TRUE}
-#Search by Shiba inu
-query <- "Shiba inu"
-DogImg <- GoogleImage2array(query, Display = TRUE)
+#Search by Shiba inu (One line execution)
+DogImg <- GoogleImage2array("Shiba inu", Display = TRUE)
 
 #show info
 str(DogImg)
+```
+
+# Search via `GoogleImage2array.world` function
+
+This function retrieves images from 10 regions of the world and 
+returns them as a single array data.
+
+This allows more than 20 images to be acquired at a time.
+
+```{r}
+query <- "Shiba inu"
+DogImgw <- GoogleImage2array.world(query)
+
+str(DogImgw)
 ```
 
 # Combine two arrays together
@@ -95,6 +108,7 @@ display.spiral(CatImg)
 ```
 
 ```{r Fig001, fig.cap = "display images as a spiral image", echo = FALSE, out.width="75%"}
+library(GoogleImage2Array)
 library(EBImage)
 options(EBImage.display = "raster")
 img <- system.file("images", "spiral.png", package="GoogleImage2Array")
