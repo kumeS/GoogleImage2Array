@@ -25,6 +25,9 @@ R package for Creating Array Data from 2D Image Thumbnails via Google Image Sear
 - install from CRAN (ver.	0.99.2)
 
 ```r
+install.packages("BiocManager")
+BiocManager::install("EBImage")
+
 install.packages("GoogleImage2Array", repos="http://cran.r-project.org")
 ```
 
