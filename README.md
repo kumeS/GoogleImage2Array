@@ -1,4 +1,4 @@
-# [GoogleImage2Array (0.99.x)](https://kumes.github.io/GoogleImage2Array/)
+# [GoogleImage2Array (0.99.x)](https://kumes.github.io/GoogleImage2Array/) <img src="https://github.com/kumeS/GoogleImage2Array/blob/main/inst/images/hexSticker_GoogleImage2Array.png" align="right" height="139" />
 
 [![CRAN](https://www.r-pkg.org/badges/version/GoogleImage2Array)](https://cran.r-project.org/web/packages/GoogleImage2Array/index.html)
 [![CRAN_latest_release_date](https://www.r-pkg.org/badges/last-release/GoogleImage2Array)](https://cran.r-project.org/package=GoogleImage2Array)
@@ -10,8 +10,6 @@
 R package for Creating Array Data from 2D Image Thumbnails via Google Image Search
 
 [CRAN/GoogleImage2Array](https://cran.curtin.edu.au/web/packages/GoogleImage2Array/index.html), [GitHub/GoogleImage2Array](https://github.com/kumeS/GoogleImage2Array), [rdrr.io/GoogleImage2Array](https://rdrr.io/cran/GoogleImage2Array/)
-
-[<img src="inst/images/hexSticker_GoogleImage2Array.png" height="150"/>](https://github.com/kumeS/GoogleImage2Array/blob/main/inst/images/hexSticker_GoogleImage2Array.png)
 
 # Version
 
